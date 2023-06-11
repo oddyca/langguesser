@@ -1,2 +1,6 @@
 # langguesser
-"Fork" from my RSS course project
+
+Javascript trivia game.
+
+
+P.S. "Fork" of my RSS course project.

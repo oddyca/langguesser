@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href = "style.css" rel = "stylesheet">
+  <title>LangGuesser Quiz</title>
+</head>
+<body id = "landing">
+  <div class="landing-body">
+    <nav class = "navbar">
+      <div class = "navbar-logo">
+        <img class = "navbar-logo_img" src = "assets/icons/ear-small.svg" alt = "navbar logo"/>
+        <h1 class = "navbar-logo_text">Lang<span class = "navbar-logo_guesser">Guesser</span></h1>
+      </div>
+      <div class = "navbar-links">
+        <div class="quiz">
+          <img class = "quiz-icon" src = "assets/icons/quiz.png" alt = "quiz-icon" />
+          <a class = "navbar-link" href = "quiz.html">Quiz</a>
+        </div>
+        <div class="home">
+          <img src = "assets/icons/home-icon.svg" alt = "home icon"/>
+          <a class = "navbar-link" href = "index.html">Home</a>
+        </div>
+      </div>
+    </nav>
+    <nav class = "navbar-mobile">
+      <div class = "navbar-mobile-logo">
+        <img class = "navbar-mobile-logo_img" src = "assets/icons/ear-small.svg" alt = "navbar logo"/>
+        <h1 class = "navbar-mobile-logo_text">Lang<span class = "navbar-logo_guesser">Guesser</span></h1>
+      </div>
+      <div class = "navbar-mobile-links">
+        <div class="quiz">
+          <img class = "quiz-icon" src = "assets/icons/quiz.png" alt = "quiz-icon" />
+          <a class = "navbar-mobile-link" href = "quiz.html">Quiz</a>
+        </div>
+        <div class="home">
+          <img src = "assets/icons/home-icon.svg" alt = "home icon"/>
+          <a class = "navbar-mobile-link" href = "index.html">Home</a>
+        </div>
+      </div>
+    </nav>
+    <main class = "landing-main">
+      <div id = "greetings">
+        <img id = "cube-animation" src = "assets/icons/cube.svg" alt = "tesseract" />
+        <h1>Try to guess <span>10</span> languages</h1>
+        <h3>Based on their sound</h3>
+        <div id = "start-container">
+          <div class = "arrows-animation arrows-right"></div> 
+          <a id = "start-quiz" href = "quiz.html">START</a>
+          <div class = "arrows-animation"></div> 
+        </div>
+      </div>
+    </main>
+    <footer class = "footer">
+      <div class = "footer-container">
+        <img id = "rss-img" src = "assets/icons/rs_school_js.svg" alt = "rs school logo" />
+        <a class = "github-cred" href = "https://github.com/oddyca" _blank>
+          <img id = "github-img" src = "assets/icons/GitHub-Mark-Light-120px-plus.png" alt = "github logo">
+          oddyca
+        </a>
+        <div class="credentials">
+          <p>Designed by Sergei Prokopovich</p>
+          <p>2022</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src = "./modules/landing.js"></script>
+</body>
+</html>

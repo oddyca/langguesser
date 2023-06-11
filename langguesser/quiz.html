@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href = "style.css" rel = "stylesheet">
+  <title>Quiz - LangGuesser Quiz</title>
+</head>
+<body id = "quiz-body">
+  <main id = "quiz-main">
+    <div id = "quiz-main_logo">
+      <img alt = "LangGuesser logo" src = "assets/icons/logo.svg">
+    </div>
+    <div id = "quiz-main_container">
+      <div id = "quiz-main_flag-bg">
+        <img src="assets/icons/flag.svg" alt = "flag background image">
+        <div id = "quiz-main_flag-subtext">
+          <div class="subtext_line"></div>
+          <p id = "score-text">SCORE: <span id = "score">0</span></p>
+          <div class="subtext_line"></div>
+        </div>
+      </div>
+      <div id = "quiz-main_container_game">
+        <div id = "questions-bar"></div>
+        <div id = "row-1">
+          <a href = "index.html" id = "back-to-land">HOME</a>
+          <div id = "flag-screen">
+            <div class = "flag-gag">
+              <img src = "" alt = "flag picture" id = "flag-img">
+            </div>
+            <div id = "lang-name">???</div>
+          </div>
+          <div class = "lang-description">
+            <div class="description-row-one">
+              <div class="description_close">X</div>
+              <div class="description_flag">
+                <img class = "description_flag-img" src = "" alt = "description menu correct answer flag">
+              </div>
+              <div class="description_lang-names">
+                <div class="lang-name-translated"></div>
+                <div class="lang-name-original"></div>
+              </div>
+            </div>
+            <div class="description-row-two">
+              <audio src = "" class = "description-audio"></audio>
+              <div class="description-controls-col-one">
+                <button class = "description-play-sound-button"></button>
+              </div>
+              <div class="description-controls-col-two">
+                <div class = "description-length">
+                  <div class="description-length_progress"></div>
+                </div>
+              </div>
+              <div class = "description-duration">
+                  <div class = "description-duration_current">0 : 00</div>
+                  <div class = "description-duration_all"></div>
+              </div>
+              <p class = "language-facts"></p>
+            </div>
+          </div>
+        </div>
+        <div id = "player">
+          <audio class = "play-sound"></audio>
+
+          <div id = "player_controls">
+            <div class="controls-col-one">
+              <button class = "play-sound-button"></button>
+            </div>
+            <div class="controls-col-two">
+              <div class = "length">
+                <div class="length_progress"></div>
+              </div>
+              <div class = "duration">
+                <div class = "duration_current">0 : 00</div>
+                <div class = "duration_all"></div>
+            </div>
+            <!--<input type = "range" class = "controls_sound"></input>-->
+            </div>
+          </div>
+
+        </div>
+        <form id = "quiz-options">
+          <ul id = "quiz-options_list">
+          </ul>
+          <button class = "next-question" type="button" disabled>NEXT</button>
+          <audio src = "https://cdn.pixabay.com/audio/2022/03/10/audio_2318350b97.mp3" id = "correct"></audio>
+          <audio src = "https://cdn.pixabay.com/audio/2022/03/15/audio_b0669294aa.mp3" id = "incorrect"></audio>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src = "modules/quiz.js" type = "module"></script>
+  <script src = "modules/DB.js" type = "module"></script>
+</body>
+</html>
